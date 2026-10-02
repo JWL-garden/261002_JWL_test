@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\platu\\OneDrive\\Desktop\\Modless\\Modless.csproj": {}
+    "C:\\Users\\KICTE\\Desktop\\Modless\\Modless.csproj": {}
   },
   "projects": {
-    "C:\\Users\\platu\\OneDrive\\Desktop\\Modless\\Modless.csproj": {
+    "C:\\Users\\KICTE\\Desktop\\Modless\\Modless.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\platu\\OneDrive\\Desktop\\Modless\\Modless.csproj",
+        "projectUniqueName": "C:\\Users\\KICTE\\Desktop\\Modless\\Modless.csproj",
         "projectName": "Modless",
-        "projectPath": "C:\\Users\\platu\\OneDrive\\Desktop\\Modless\\Modless.csproj",
-        "packagesPath": "C:\\Users\\platu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\platu\\OneDrive\\Desktop\\Modless\\obj\\",
+        "projectPath": "C:\\Users\\KICTE\\Desktop\\Modless\\Modless.csproj",
+        "packagesPath": "C:\\Users\\KICTE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KICTE\\Desktop\\Modless\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\platu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KICTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

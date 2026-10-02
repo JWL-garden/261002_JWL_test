@@ -72,6 +72,23 @@ namespace Modless
         // 번호표에 적어 둔 할 일 (내 차례가 되면 실행됨)
         private Action<UIDocument, Document> _action;
         //
+
+        public static string m_floorTypeName = "";
+        public static string m_wallTypeName = "";
+        public static string m_ceilingTypeName = "";
+        public static string m_wallHeight = "";
+        public static string m_ceilingHeight = "";
+        public static string m_doorTypeName = "";
+        public static Level m_BotLevel;
+        public static Level m_TopLevel;
+        public static string m_BLevelstr = "";
+        public static string m_TLevelstr = "";
+        public static bool m_isFloor = false;
+        public static bool m_isWall = false;
+        public static bool m_isCeiling = false;
+
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -87,6 +104,13 @@ namespace Modless
             RunRevit((uidoc, doc) =>
             {
                 // 할 일
+                List<floor> fl = FloorATT.GetFloorData(doc, uidoc, m_floorTypeName);
+
+                foreach (floor f in fl)
+                {
+                    Util.CreateFloor(doc, f.m_CurveLoop, f.m_FloorType, f.m_level, f.m_FloorTypeTHK);
+                }
+
                 TaskDialog.Show("Modless", "버튼 클릭! 내 차례!");
             });
         }
@@ -149,6 +173,16 @@ namespace Modless
             // 번호표 기계 철거
             _exEvent.Dispose();
             base.OnFormClosed(e);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
